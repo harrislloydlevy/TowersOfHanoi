@@ -37,7 +37,7 @@ class Tower(object):
     self.towers[y].append(self.towers[x].pop())
 
   def print(self):
-      for i in range(self.size-1,-1,-1):
+      for i in reversed(range(0,self.size)):
           # Disc size of tower 1, 2, and 3 respecigvely is held in text A, B, C
           # Do not print directly so we can make it either a number for a disc or
           # "|" if no disc there.
